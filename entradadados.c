@@ -11,10 +11,9 @@ main()
     scanf("%s", name);            // scanf é utilizado para esperar e guardar um dado que coloquei uma %s"string" e define que ela é o name;
     printf("qual é a sua idade?\n");
     scanf("%i", &years);
-    printf("olá %s você tem %i de idade\n", name, years);
     printf("qual é a sua altura?\n");
     scanf("%f", &height);
-    printf("qual é o seu peso?x\n");
+    printf("qual é o seu peso?\n");
     scanf("%f", &kg);
     float imc = (kg / (height * height));
 
