@@ -2,8 +2,6 @@
 
 minhas aulas de C
 
-aula 12/08
-
 O objetivo da aula é definida em aprender a olhar para um problema e conseguir resolver
 
 Variaveis, saida de dados e apresentação de dados é necessario reservar RAM para que o algoritimo seja executado.
@@ -17,3 +15,4 @@ Quando for == "INT" ou "FLOAT" ou "DOUBLE" sempre colocar o &;s
 char == %s
 int == %i
 float == %f
+.2X == numero de casas decimais
