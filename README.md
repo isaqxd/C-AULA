@@ -9,7 +9,7 @@ Variaveis, saida de dados e apresentação de dados é necessario reservar RAM p
 É chamada de variavel o endereço da memoria onde fica localizado o endereço de memoria, posso possuir três informações importante em uma VARIAVEL que é o nome, a função e o que ela contem.
 
 Variavel = Nome (CONTEUDO QUE É GUARDADO.)
-Quando for == "INT" ou "FLOAT" ou "DOUBLE" sempre colocar o &;s
+Quando for == "INT" ou "FLOAT" ou "DOUBLE" sempre colocar o &;
 
 \n == faz uma quebra de linha.
 char == %s
