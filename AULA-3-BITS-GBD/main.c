@@ -1,10 +1,14 @@
 #include <stdio.h>
+
 main(){
-int impar;
-int par;
+    float impar;
+    float par;
 
-printf("Qual é seu primeiro numero?\n");
-scanf("%i", impar)
-printf("Qual é o segundo numero?\n")
-
-}
+    printf("OPERACAO DE DIVISAO\n");
+    printf("qual e o primeiro numero da divisao?\n");
+    scanf("%f", &impar);
+    printf("qual e o segundo numero?\n");
+    scanf("%f", &par);
+    float divisao = (impar / par);
+    printf ("o resultado da divissao e %.2f", divisao);
+    }
