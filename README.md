@@ -16,3 +16,26 @@ char == %s
 int == %i
 float == %f
 .2X == numero de casas decimais
+
+
+// %s - string
+// %c - char
+// %d,%i - inteiro
+// %f - float
+// %lf - double
+// %ld - long int
+
+// Operações aritméticas básicas
+// * 
+// / 
+// +
+// -
+
+// %  resto da divisão.
+
+// (2+2)/2 = 2
+// 2+((2/2)*7) = 3
+
+// ==   igual
+// >=   maior ou igual
+// >   maior

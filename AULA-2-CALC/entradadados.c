@@ -7,13 +7,13 @@ main()
     float height;
     int years;
 
-    printf("insira seu nome:\n"); // envia a mensagem que está dentro do printf;
+    printf('insira seu nome:\n'); // envia a mensagem que está dentro do printf;
     scanf("%s", name);            // scanf é utilizado para esperar e guardar um dado que coloquei uma %s"string" e define que ela é o name;
-    printf("qual é a sua idade?\n");
+    printf('qual é a sua idade?\n');
     scanf("%i", &years);
-    printf("qual é a sua altura?\n");
+    printf('qual é a sua altura?\n');
     scanf("%f", &height);
-    printf("qual é o seu peso?\n");
+    printf('qual é o seu peso?\n');
     scanf("%f", &kg);
     float imc = (kg / (height * height));
 
