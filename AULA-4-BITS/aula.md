@@ -70,22 +70,27 @@ int main(){
 #include <stdio.h>
 
 int main(){
+    char nome[124];
+    int i;
+    int erradas = 0;
+    printf("Insira um nome: ");
+    scanf("%s", nome);
 
-    int num1, num2, resto;
-    int tentativas;
-
-    for (tentativas = 0; resto != 0; tentativas++) 
+    printf(" a terceira letra é %c", nome[2]);
+    for (i = 0; i < 124; i++) 
     {
-        printf("Insira um numero: ");
-        scanf("%d", &num1);
+        if (!( (nome[i] >= 'a') && (nome[i]  <= 'z'))) {
+            printf("a posicao %d nao e letra: %c", i, nome[i]);
+            erradas++;
+        }
 
-        printf("Insira outro numero: ");
-        scanf("%d", &num2);
-
-        resto = num1%num2;
+        if (nome[i] == '\0') {
+            break;
+        }
     }
  
-    printf("Quantidade de tentativas: %d \n", tentativas);
+    printf("Quantidade de erradas: %d \n", erradas);
 
     return 0;
 }
+
