@@ -7,37 +7,37 @@ Existe o conceito de bits e ele é muito importante no C/C++ e existe uma tabela
 1024Gb == 1TeraByte or TB
 
 
-// %s - string
-// %c - char
-// %d,%i - inteiro
-// %f - float
-// %lf - double
-// %ld - long int
+%s - string
+%c - char
+%d,%i - inteiro
+%f - float
+%lf - double
+%ld - long int
 
-// Operações aritméticas básicas
-// * 
-// / 
-// +
-// -
+Operações aritméticas básicas
+ * 
+ / 
+ +
+ -
 
-// ++    incrementa   i++ é a mesma coisa que i = i + 1;
+++ incrementa   i++ é a mesma coisa que i = i + 1;
 
-// %  resto da divisão.
+%  resto da divisão.
 
 // (2+2)/2 = 2
 // 2+((2/2)*7) = 3
 
-// ==   igual
-// >=   maior ou igual
-// >   maior
-// <=   menor ou igual
-// <   menor
-// !=   diferente
+==   igual
+>=   maior ou igual
+>   maior
+<=   menor ou igual
+<   menor
+!=   diferente
 
 Operadores relacionais
 
 &&   - verdade se todas as comparações são verdadeiras
-||     - verdade se alguma comparação é verdadeira
+||   - verdade se alguma comparação é verdadeira
 
 ---------- ATIVIDADES ----------
 ---------- EXERCICIO 1 ----------
