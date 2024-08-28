@@ -13,7 +13,7 @@ main(){
         printf("esse triangulo e equilatero");
 
     }
-    else if ((a == b) || (b == c) || (a == c)){
+    else if ((a == b) || (b == c) || (!(a == c))){
         printf("esse triangulo e isosceles");
 
     }
