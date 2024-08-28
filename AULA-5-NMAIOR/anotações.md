@@ -12,3 +12,5 @@ Operadores lógicos relacionais
 a && b      (o resultado é verdadeiro se ambas as condições forem verdadeiras.);
 a || b      (o resultado é verdade se alguma condição for verdadeira.);
 !a          (o resultado é verdade se a condição for falsa, e vice versa.);
+
+variavel (!Não(O over vai narrar para o G2)) == 

@@ -3,15 +3,20 @@ int main(){
 
     int val1 = 100;
     int val2 = 200;
+    int resultado = 0;
     int chute;
-
-    printf("chute um numero:");  
-    scanf("%i", &chute);
-    int resultado = funcao(val1, val2, chute);
-    if (resultado == 1) printf("Acerto a miseravi");
-        
-    else printf("errow");
-
+     
+   while (resultado == 0 ) {
+        printf("Chute um numero: ");  
+        scanf("%d", &chute);
+        resultado = funcao(val1, val2, chute);
+        if (resultado == 1) {
+            printf("Acertou a miseravi!\n");
+        } else {
+            printf("Errow, tente novamente.\n");
+        }
+    }
+    
     return 0;
 }
 
