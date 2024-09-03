@@ -19,6 +19,8 @@ while(repeticoes < 3){
     scanf("%f", &altura);
 
     printf("%s, %d anos, %.2f metros", nome, idade, altura); // %d == decimais (representa um inteiro).
+
+    repeticoes++;
 }
 
 return 0;
