@@ -4,35 +4,30 @@
 
 int main() {
     int alvo = 10;
-    int palpite;
+    int palpite = 10;
     int i;
+    
+    i = 0;
 
+    do {
+        printf("\n Faca seu palpite");                           
+        scanf("%d", &palpite);
 
-do{
-    printf("\nFaca seu palpite\n");
-    scanf("%d", &palpite);
+        if (palpite == alvo) {
+            printf("\n Acertou!");
+            printf("\n Parabens! ");        
+        } else if (palpite > alvo) {
+            printf("\n Errou =/");
+            printf("\n Tente um numero menor ");
+        } else {
+            printf("\n Errou =/");
+            printf("\n Tente um numero maior ");
+        }
 
-    if (palpite == alvo) {
-    printf("\nAcertou!");
-    printf("\nParabens! ");
-        
-    } else if (palpite > alvo) {
-        printf("\nErrou =/");
-        printf("\nTente um numero menor ");
-    } else {
-        printf("\nErrou =/");
-        printf("\nTente um numero maior ");
-    }
-    i++;
-}while ((palpite != alvo) || (i > 4));
+        i++;
+    } while ( (palpite != alvo) && (i < 4) );
 
-
-
-
-
+    printf("\n Voce fez %d tentativas", i);
     printf("\n Tecle qualquer coisa para terminar.");
     scanf("%d", palpite);
-
-    // NÃO REPETE
-    return 0;
 }
