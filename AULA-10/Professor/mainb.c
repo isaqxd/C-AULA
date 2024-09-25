@@ -11,8 +11,10 @@
 int main() {
     int aleatorio[QUANTIDADE];
     int copia;
+
     srand(time(NULL));
     printf("\n");
+    
     for (int pos = 0; pos < QUANTIDADE; pos++) {
         aleatorio[pos] = rand();
         printf("%d ", aleatorio[pos]);
@@ -36,8 +38,3 @@ int main() {
 
 
 }
-
-
-
-// 3 10 50 -10
-

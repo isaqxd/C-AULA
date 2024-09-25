@@ -2,48 +2,50 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define V (1000)
-#define TAMANHO_VETOR (10)
-int main()
-{
+#define Q (1000)
 
-    int vector[V];
-    int aux;
+int busca(int vetor[], int inicio, int fim, int procura){
+    while (inicio <= fim){
+        int meio = inicio + (fim - inicio) / 2;
+        if (vetor[meio] == procura)
+            return meio;
+        if (vetor[meio] < procura)
+            inicio = meio +1;
+        else
+            fim = meio -1;
+    }
+    return -1; 
+}
 
+int main (){
+    int vetor[Q], aux;
     srand(time(NULL));
 
-    for (int i = 0; i < V; i++)
-    {
-        vector[i] = 1 + rand() % 1100;
+    for(int i = 0; i < Q ;i++){
+        vetor[i] = 1 + rand() % 1100;   
     }
 
-    for (int i = 0; i < (V - 1); i++)
-    {
-        if (vector[i] > vector[i + 1])
-        {
-            aux = vector[i];
-            vector[i] = vector[i + 1];
-            vector[i + 1] = aux;
-
+    for (int i = 0; i < (Q -1); i++) {
+        if (vetor[i] > vetor[i+1]){
+            aux = vetor[i];
+            vetor[i] = vetor[i+1];
+            vetor[i+1] = aux;
             i = -1;
         }
     }
-
-    for (int i = 0; i < V; i++)
-    {
-        // printf("%d ", vector[i]);
+    
+    int valor;
+    printf("Digite o valor que deseja buscar: ");
+    scanf("%d", &valor);
+    
+    int resultado = busca(vetor, 0, Q - 1, valor);    
+    
+    if (resultado != -1) {
+        printf("Valor encontrado na posicao: %d\n", resultado);  
+    } else {
+        printf("Valor nao encontrado no vetor.\n");
     }
 
-    int sequential_search(int tamanho[TAMANHO_VETOR], int item)
-    {
-        for (int i = 0; t < TAMANHO_VETOR; i++)
-        {
-            if (tamanho[i] == item)
-            {
-                return i;
-            }
-        }
+    return 0;
 
-        return -1;
-    }
 }
