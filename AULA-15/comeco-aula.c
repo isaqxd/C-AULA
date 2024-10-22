@@ -17,7 +17,6 @@ int main(){
     fflush(stdin);
     scanf(" %d", &num2);
     
-
     switch (op)
     {
     case '+':
@@ -28,17 +27,14 @@ int main(){
         resultado=num1-num2;
         printf("%d - %d tem como resultado:  %d", num1, num2, resultado);
         break;
-    
     case '*':
         resultado=num1*num2;
         printf("%d * %d tem como resultado: %d", num1, num2, resultado);
         break;
-
     case '/':
         resultado=num1/num2;
         printf("%d / %d tem como resultado: %d", num1, num2, resultado);
         break;
-    
     default:
         break;
     }
