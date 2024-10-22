@@ -80,7 +80,7 @@ float pot(float base, float expoente) { // função utilizada para fazer potenci
     if (base = 0)
     {
         printf("O seu resultado e 0");
-    }
+    }""
     
 
     for (int i = 0; i < expoente; i++) {
