@@ -7,15 +7,15 @@ float pot(float base, float expoente);
 
 int main() {
     char teclado;
-    do {
+    do{
         float num1, num2, result;
         char op;
 
         printf("\nInsira a operacao que deseja realizar [+] [-] [*] [/] [^]: ");
         fflush(stdin);
-        scanf("%c", &op);
+        scanf(" %c", &op);
 
-        switch (op) {
+        switch (op){
             case '+':
                 num1 = valor();
                 num2 = valor();
@@ -56,7 +56,7 @@ int main() {
         }
         printf("Para continuar fazendo operacoes pressione [Y] ou [y]: ");
         fflush(stdin);
-        scanf("%c", &teclado);
+        scanf(" %c", &teclado);
 
     } while (teclado == 'Y' || teclado == 'y');
 
@@ -77,11 +77,6 @@ void apresen_result(float arg1, float arg2, char op, float res) {
 
 float pot(float base, float expoente) { // função utilizada para fazer potenciação
     float resultado = 1;
-    if (base = 0)
-    {
-        printf("O seu resultado e 0");
-    }""
-    
 
     for (int i = 0; i < expoente; i++) {
         resultado *= base;
