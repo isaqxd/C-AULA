@@ -18,8 +18,6 @@ int main (){
     printf("Insira a sua senha: ");
     scanf("%[^\n]", pass [L]);
     
-    int confirmacao = strncmp(pass, senha_1, senha_2){
-
-    }
+    int confirmacao = strncmp(pass, senha_1, senha_2);
        
 }

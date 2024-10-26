@@ -7,8 +7,8 @@ float pot(float base, float expoente);
 
 int main() {
     char teclado;
+    float num1, num2, result;
     do{
-        float num1, num2, result;
         char op;
 
         printf("\nInsira a operacao que deseja realizar [+] [-] [*] [/] [^]: ");
